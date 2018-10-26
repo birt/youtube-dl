@@ -5,14 +5,14 @@ from .common import InfoExtractor
 
 
 class RingTvIE(InfoExtractor):
-    _VALID_URL = r'https?://(?:www\.)?yourextractor\.com/watch/(?P<id>[0-9]+)'
+    _VALID_URL = r'https?://(?:www\.)?ringtv\.be/watch/(?P<id>[0-9]+)'
     _TEST = {
-        'url': 'https://yourextractor.com/watch/42',
+        'url': 'https://www.ringtv.be/nieuws/bestuursploeg-hoeilaart-rond',
         'md5': 'TODO: md5 sum of the first 10241 bytes of the video file (use --test)',
         'info_dict': {
             'id': '42',
             'ext': 'mp4',
-            'title': 'Video title goes here',
+            'title': 'Bestuursploeg Hoeilaart is rond',
             'thumbnail': r're:^https?://.*\.jpg$',
             # TODO more properties, either as:
             # * A value
