@@ -5,7 +5,7 @@ from .common import InfoExtractor
 
 
 class RingTvIE(InfoExtractor):
-    _VALID_URL = r'https?://(?:www\.)?ringtv\.be/watch/(?P<id>[0-9]+)'
+    _VALID_URL = r'https?://(?:www\.)?ringtv\.be/.*/(?P<title>.*)'
     _TEST = {
         'url': 'https://www.ringtv.be/nieuws/bestuursploeg-hoeilaart-rond',
         'md5': 'TODO: md5 sum of the first 10241 bytes of the video file (use --test)',
